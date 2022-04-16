@@ -16,9 +16,9 @@
 
   if (isset($_POST['flag'])) {
     if (strlen($_POST['flag']) != strlen($flag)) {
-      echo '<p class="block notification is-danger">Wrong length...</p>';
+      echo '<p class="block notification is-danger">The lengths do not match.</p>';
     } elseif ($_POST['flag'] != $flag) {
-      echo '<p class="block notification is-danger">Wrong flag...</p>';
+      echo '<p class="block notification is-danger">Wrong answer.</p>';
     } else {
       echo '<p class="block notification is-success">Well done!</p>';
     }
